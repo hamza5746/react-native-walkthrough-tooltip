@@ -6,6 +6,7 @@ import {
   Modal,
   TouchableWithoutFeedback,
   View,
+  TouchableOpacity
 } from 'react-native';
 import rfcIsEqual from 'react-fast-compare';
 import {
@@ -22,8 +23,6 @@ import {
 } from './geom';
 import styleGenerator from './styles';
 import TooltipChildrenContext from './tooltip-children.context';
-
-export { TooltipChildrenContext };
 
 const DEFAULT_DISPLAY_INSETS = {
   top: 24,
