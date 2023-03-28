@@ -437,12 +437,13 @@ class Tooltip extends Component {
                 onLayout={this.measureContent}
                 style={generatedStyles.contentStyle}
               >
-                <TouchableWithoutFeedback
+                <TouchableOpacity
                   onPress={onPressContent}
                   accessible={this.props.accessible}
+                  activeOpacity={1}
                 >
                   {this.props.content}
-                </TouchableWithoutFeedback>
+                </TouchableOpacity>
               </View>
             </View>
           </View>
